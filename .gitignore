@@ -1,0 +1,20 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# MovieLens dataset
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyCharm settings
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment secrets
+.env
