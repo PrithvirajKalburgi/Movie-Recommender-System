@@ -1,9 +1,9 @@
-Model;Variant / Settings;Similarity;k;Users;Precision@10;Recall@10;NDCG@10;Coverage;Seed;Notes
-Most Popular - All Ratings;All ratings;-;-;1103;0,2091;0,0467;0,226;0,0026;-;Counts all training ratings
-Most Popular - Positive Ratings;Positive ratings(?4);-;-;1103;0,217;0,0497;0,2324;0,0026;-;Counts only positive training ratings
-Item-Based kNN;Postitive Interactions;Jaccard;50;1103;0,2051;0,049;0,2231;0,0806;-;Binary positive-feedback interactions
-Item-Based kNN;Postitive Interactions;Jaccard;10;1103;0,2035;0,048;0,221;0,0927;-;Binary positive-feedback interactions
-Item-Based kNN;Postitive Interactions;Jaccard;20;1103;0,204;0,0484;0,2204;0,0863;-;Binary positive-feedback interactions
-Item-Based kNN;Postitive Interactions;Cosine;10;1103;0,2033;0,0474;0,2199;0,121;-;Binary positive-feedback interactions
-Item-Based kNN;Postitive Interactions;Cosine;20;1103;0,2028;0,0472;0,2193;0,12;-;Binary positive-feedback interactions
-Item-Based kNN;Postitive Interactions;Cosine;50;1103;0,2017;0,0467;0,2191;0,1107;-;Binary positive-feedback interactions
+Model,Variant / Settings,Similarity,k,Users,Precision@10,Recall@10,NDCG@10,Coverage,Seed,Notes
+Most Popular - All Ratings,All ratings,-,-,1103,0.2091,0.0467,0.2260,0.0026,-,Counts all training ratings
+Most Popular - Positive Ratings,Positive ratings (>=4),-,-,1103,0.2170,0.0497,0.2324,0.0026,-,Counts only positive training ratings
+Item-Based kNN,Positive Interactions,Jaccard,50,1103,0.2051,0.0490,0.2231,0.0806,-,Binary positive-feedback interactions
+Item-Based kNN,Positive Interactions,Jaccard,10,1103,0.2035,0.0480,0.2210,0.0927,-,Binary positive-feedback interactions
+Item-Based kNN,Positive Interactions,Jaccard,20,1103,0.2040,0.0484,0.2204,0.0863,-,Binary positive-feedback interactions
+Item-Based kNN,Positive Interactions,Cosine,10,1103,0.2033,0.0474,0.2199,0.1210,-,Binary positive-feedback interactions
+Item-Based kNN,Positive Interactions,Cosine,20,1103,0.2028,0.0472,0.2193,0.1200,-,Binary positive-feedback interactions
+Item-Based kNN,Positive Interactions,Cosine,50,1103,0.2017,0.0467,0.2191,0.1107,-,Binary positive-feedback interactions
