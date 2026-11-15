@@ -1,23 +1,15 @@
-import pandas as pd
-#import numpy as np
-#import matplotlib.pyplot as plt
-#from pathlib import Path
-ratings = pd.read_csv(
-    "data/ml-1m/ratings.dat",
-    sep="::",
-    engine="python",
-    names=["user_id", "movie_id", "rating", "timestamp"]
-)
+"""Single-command entry point for the current Part 1 project."""
+import argparse
+from part1 import main
 
-print(ratings.head())
-print("Total ratings:", len(ratings))
 
-movies = pd.read_csv(
-    'data/ml-1m/movies.dat',
-    sep="::",
-    engine="python",
-    names=["movie_id", "title", "genres"],encoding="latin-1"
-)
+def run():
+    parser = argparse.ArgumentParser(description="Run Recommender Systems Part 1")
+    parser.add_argument("--data-dir", required=True, help="Folder containing MovieLens .dat files")
+    parser.add_argument("--output-dir", default="part1_outputs", help="Generated output folder")
+    args = parser.parse_args()
+    main(args.data_dir, args.output_dir)
 
-print(movies.head())
-print("Total ratings:", len(movies))
+
+if __name__ == "__main__":
+    run()
