@@ -1,8 +1,4 @@
-"""Part 1: MovieLens 1M analysis, baselines, validation and final test.
 
-Adapted from the user's recommender.ipynb; variable names and model definitions
-are preserved where practical. Run via run_all.py for configurable paths.
-"""
 from pathlib import Path
 import json
 import numpy as np
